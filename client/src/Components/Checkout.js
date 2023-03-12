@@ -76,7 +76,7 @@ export default function Checkout() {
   const handleNext = async () => {
     setActiveStep(activeStep + 1);
     if (activeStep === 1) {
-      let url= "http://localhost:5000/api/student"
+      let url= "https://acem-mis.cyclic.app/api/student"
       const formData = new FormData();
       formData.append("name", state.name);
       formData.append("cid", state.cid);
